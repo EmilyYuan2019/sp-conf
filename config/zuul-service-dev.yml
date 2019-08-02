@@ -1,6 +1,11 @@
 spring:
   application:
     name: zuul
+  rabbitmq:
+    host: 192.168.92.135
+    port: 5672
+    username: admin
+    password: admin
     
 server:
   port: 3001
@@ -10,7 +15,7 @@ eureka:
     service-url:
       defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
 
-#如果访问路径和服务名相同,可以不需要配置
+#濡傛灉璁块棶璺緞鍜屾湇鍔″悕鐩稿悓,鍙互涓嶉渶瑕侀厤缃�
 #zuul:
 #  routes:
 #   item-service: /item-service/**
